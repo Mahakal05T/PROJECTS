@@ -10,14 +10,14 @@ Python 3.x installed
 MySQL installed and running
 mysql-connector-python package installed
 Setup Instructions
+
 Step 1: Database Setup
 Install MySQL:
 Download and install MySQL from the official website.
 Create Database and Table:
 Open your MySQL command line or MySQL Workbench.
 Create a new database and table using the following commands:
-sql
-Copy code
+
 CREATE DATABASE user_data;
 USE user_data;
 CREATE TABLE users (
@@ -28,33 +28,35 @@ CREATE TABLE users (
     dob DATE,
     description TEXT
 );
+
 Step 2: Python Environment Setup
 Install Required Python Package:
 Open your terminal or command prompt.
 Install mysql-connector-python package using pip:
-sh
-Copy code
+
 pip install mysql-connector-python
+
 Step 3: Configure Database Connection
 Update Database Configuration:
 Open the Python script.
 Locate the db_config dictionary and update it with your MySQL credentials:
-python
-Copy code
+
+
 db_config = {
     'user': 'your_username',
     'password': 'your_password',
     'host': 'localhost',
     'database': 'user_data'
 }
+
 Step 4: Running the Server
 Start the HTTP Server:
 In your terminal or command prompt, navigate to the directory containing the Python script.
 Run the server using Python:
-sh
-Copy code
+
 python server.py
 The server will start on http://localhost:8080.
+
 Step 5: Using the Application
 Submit User Data:
 
